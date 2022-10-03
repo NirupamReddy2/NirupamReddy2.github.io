@@ -1,11 +1,11 @@
 {
-    "name": "my_website",
-    "short_name": "my_website",
+    "name": "Nirupam Reddy",
+    "short_name": "Nirupam Reddy",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Hello, I'm Nirupam Reddy. I'm a Student, Flutter Developer, Programmer. Welcome to my portfolio website",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
