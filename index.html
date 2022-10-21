@@ -38,12 +38,36 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3080602150';
+    var serviceWorkerVersion = '535851525';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    .indicator {
+      width: 50vw;
+    }
+
+    body {
+      background-color: black;
+    }
+
+  </style>
 </head>
 <body>
+
+  <div id="loading_indicator" class="container">
+    <img src="https://hackernoon.com/images/0*QdX-f4eHiimvQZoZ.gif" class="indicator" />
+  </div>
+
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -58,5 +82,17 @@
       });
     });
   </script>
+
+<script>
+  window.onload = function(){
+    setTimeout(function (){
+      var loadingIndicator = document.getElementById("loading_indicator");
+      if(loadingIndicator)
+      {
+        loadingIndicator.remove();
+      }
+    }, 12000);
+  };
+</script>
 </body>
 </html>
